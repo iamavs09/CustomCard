@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+.wrapper{
+    width: 550px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-image: url('/images/image-product-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0 0 20px; 
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 50%;
+    height: 100%;
+    padding: 1.5em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 20px 20px 0;
+    
+}
+.right h2{
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+}
+.right h5{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+}
+
+.right p{
+    font-size: 14px;
+    line-height: 20px;
+    color: hsl(228, 12%, 48%);
+
+}
+.big{
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+}
+.small{
+    transform: translateY(-10px);
+    display: inline-block;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color:hsl(158, 36%, 20%) ;
+    cursor: pointer;
+}
+img{
+    margin-right: 10px;
+}
+@media only screen and (max-width: 600px){
+   .wrapper{
+    width: 350px;
+    min-height: 600px;
+   }
+   .left{
+    width: 100%;
+    height: 40%;
+    background-image: url('/images/image-product-mobile.jpg');
+    border-radius: 20px 20px 0 0;
+    }
+.right{
+    width: 100%;
+    height: 60%;
+    border-radius: 0 0 20px 20px;
+    gap: 1em; 
+    }
+}
